@@ -21,8 +21,11 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
 
-
-      - name: Install Dependencies CDN
+      - name: Install Dependencies CDK
+        run: npm install -g aws-cdk
+        working-directory: ./rest-api-hello-world
+      
+      - name: Install Dependencies
         run: npm install
         working-directory: ./rest-api-hello-world
 
