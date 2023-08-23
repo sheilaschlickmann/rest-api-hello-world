@@ -27,5 +27,5 @@ jobs:
         working-directory: ./rest-api-hello-world
 
       - name: Deploy CDK
-        run: npm run deploy
+        run: cdk deploy
         working-directory: ./rest-api-hello-world
