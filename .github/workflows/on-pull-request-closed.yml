@@ -1,7 +1,7 @@
 name: Destroy PR Environment
 on:
   pull_request:
-    types:  [master]
+    types:  [closed]
   workflow_dispatch:
 jobs:
   destroy:
