@@ -12,12 +12,14 @@
 const fs = require('fs');
 const path = require('path');
 
+console.log('__dirname:', __dirname);
+
 exports.handler = async (event) => {
     const html = fs.readFileSync(path.resolve(__dirname, 'index.html'), 'utf-8');
     const css = fs.readFileSync(path.resolve(__dirname, 'ui/css/style.css'), 'utf-8');
     const js = fs.readFileSync(path.resolve(__dirname, 'ui/js/script.js'), 'utf-8');
      
-    console.log('__dirname:', __dirname);
+    
 
     const response = {
         statusCode: 200, 
