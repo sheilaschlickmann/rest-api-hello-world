@@ -16,7 +16,9 @@ exports.handler = async (event) => {
     const html = fs.readFileSync(path.resolve(__dirname, '../public/index.html'), 'utf-8');
     const css = fs.readFileSync(path.resolve(__dirname, '../public/ui/css/style.css'), 'utf-8');
     const js = fs.readFileSync(path.resolve(__dirname, '../public/ui/js/script.js'), 'utf-8');
-
+     
+    console.log('__dirname:', __dirname);
+    
     const response = {
         statusCode: 200, 
         headers: {
