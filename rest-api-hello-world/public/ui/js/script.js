@@ -5,4 +5,4 @@ function animateHelloWorld() {
     helloWorld.style.color = color;
 }
 
-setInterval(animateHelloWorld, 1000);
+setInterval(animateHelloWorld, 1000); 
