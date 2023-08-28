@@ -29,6 +29,10 @@ jobs:
         run: npm install
         working-directory: ./rest-api-hello-world
 
+      - name: Run Lambda Tests
+        run: npm run test
+        working-directory: ./lambda
+      
       - name: Deploy CDK
         run: cdk deploy --require-approval never
         working-directory: ./rest-api-hello-world
