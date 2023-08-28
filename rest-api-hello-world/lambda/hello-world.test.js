@@ -1,4 +1,4 @@
-const { handler } = require('./lambda/hello-world.js');
+const { handler } = require('./hello-world.js');
 
 test('test lambda handler', async () => {
   const event = {};  // você pode colocar aqui um evento de exemplo
