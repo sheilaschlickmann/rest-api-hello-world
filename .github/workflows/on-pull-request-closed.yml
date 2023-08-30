@@ -29,6 +29,8 @@ jobs:
         run: npm install
         working-directory: ./rest-api-hello-world
 
+        
+
       - name: Destroy cdk
         run: echo 'y' | cdk destroy --all
         working-directory: ./rest-api-hello-world
